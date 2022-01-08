@@ -16,4 +16,15 @@ public class TestController {
     public String testNewEndpoint(@PathVariable String name) {
         return "Hello World ".concat(name) ;
     }
+
+    @GetMapping("/test3/{name}")
+    public String testNewEndpoint3(@PathVariable String name) {
+        return "Hello World ".concat(name) ;
+    }
+
+    @GetMapping("/test4/{name}")
+    public String testNewEndpoint4(@PathVariable String name) {
+        return "Hello World ".concat(name) ;
+    }
+
 }
