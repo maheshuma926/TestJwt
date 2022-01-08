@@ -11,4 +11,9 @@ public class TestController {
     public String test(@PathVariable String name) {
         return "Hello World ".concat(name) ;
     }
+
+    @GetMapping("/test2/{name}")
+    public String testNewEndpoint(@PathVariable String name) {
+        return "Hello World ".concat(name) ;
+    }
 }
