@@ -1,0 +1,13 @@
+host=localhost
+port=8080
+name="mahesh"
+
+### Check response body
+GET http://{{host}}:{{port}}/test/{{name}}
+
+> {%
+client.test("Response returned is correct", function() {
+  //client.assert(response.body.hasOwnProperty("headers"), "Cannot find 'headers' option in response");
+  client.assert(response.body === "Hello World Mahesh")
+});
+%}
